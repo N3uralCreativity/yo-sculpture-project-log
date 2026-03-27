@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T01:40:38.746Z",
+  "generatedAt": "2026-03-27T01:42:43.265Z",
   "repository": {
     "name": "YO_Sculpture",
     "owner": "N3uralCreativity",
@@ -10,97 +10,57 @@
     "note": "Source repository access stays private. This public log only exposes commit metadata and simple diff counts."
   },
   "summary": {
-    "totalCommits": 221,
+    "totalCommits": 222,
     "totalContributors": 2,
     "latestCommit": {
-      "sha": "e5ff2ede3fd7e51ec701c744d4045790ff781302",
-      "shortSha": "e5ff2ed",
-      "subject": "Ajoute un journal technique GitHub Pages du projet",
+      "sha": "68424526d39076efe90b68d7787b2ee864f5be40",
+      "shortSha": "6842452",
+      "subject": "Publie le journal technique via un depot public",
       "body": "",
       "authorName": "N3uralCreativity",
-      "authoredAt": "2026-03-27T02:21:08+01:00",
-      "additions": 1815,
-      "deletions": 0,
-      "filesChanged": 7,
-      "totalChanges": 1815,
+      "authoredAt": "2026-03-27T02:42:12+01:00",
+      "additions": 95,
+      "deletions": 42,
+      "filesChanged": 3,
+      "totalChanges": 137,
       "dominantAreas": [
-        "project-log",
-        "Root"
+        "Automation",
+        "Ops"
       ],
       "files": [
         {
-          "path": "project-log/src/styles.css",
+          "path": ".github/workflows/project-log-pages.yml",
           "previousPath": null,
-          "status": "A",
-          "additions": 667,
-          "deletions": 0,
-          "changes": 667,
-          "area": "project-log",
-          "language": "CSS"
+          "status": "M",
+          "additions": 36,
+          "deletions": 25,
+          "changes": 61,
+          "area": "Automation",
+          "language": "YAML"
         },
         {
           "path": "scripts/build-project-log.js",
           "previousPath": null,
-          "status": "A",
-          "additions": 504,
-          "deletions": 0,
-          "changes": 504,
+          "status": "M",
+          "additions": 34,
+          "deletions": 6,
+          "changes": 40,
           "area": "Ops",
           "language": "JavaScript"
         },
         {
           "path": "project-log/src/app.js",
           "previousPath": null,
-          "status": "A",
-          "additions": 455,
-          "deletions": 0,
-          "changes": 455,
+          "status": "M",
+          "additions": 25,
+          "deletions": 11,
+          "changes": 36,
           "area": "project-log",
           "language": "JavaScript"
-        },
-        {
-          "path": "project-log/src/index.html",
-          "previousPath": null,
-          "status": "A",
-          "additions": 134,
-          "deletions": 0,
-          "changes": 134,
-          "area": "project-log",
-          "language": "HTML"
-        },
-        {
-          "path": ".github/workflows/project-log-pages.yml",
-          "previousPath": null,
-          "status": "A",
-          "additions": 53,
-          "deletions": 0,
-          "changes": 53,
-          "area": "Automation",
-          "language": "YAML"
-        },
-        {
-          "path": ".gitignore",
-          "previousPath": null,
-          "status": "M",
-          "additions": 1,
-          "deletions": 0,
-          "changes": 1,
-          "area": "Root",
-          "language": "Other"
-        },
-        {
-          "path": "package.json",
-          "previousPath": null,
-          "status": "M",
-          "additions": 1,
-          "deletions": 0,
-          "changes": 1,
-          "area": "Root",
-          "language": "JSON"
         }
       ],
       "parents": [
-        "1ab8bb06727598814cfda83898d5a8aa9c36485f"
+        "e5ff2ede3fd7e51ec701c744d4045790ff781302"
       ],
       "commitUrl": null,
       "compareUrl": null
@@ -1192,18 +1152,18 @@
     },
     {
       "month": "2026-03",
-      "commits": 136,
-      "additions": 29612,
-      "deletions": 11294
+      "commits": 137,
+      "additions": 29707,
+      "deletions": 11336
     }
   ],
   "contributors": [
     {
-      "commits": 218,
+      "commits": 219,
       "name": "N3uralCreativity"
     },
     {
-      "commits": 5,
+      "commits": 3,
       "name": "dependabot[bot]"
     }
   ],
@@ -1278,6 +1238,59 @@
     }
   ],
   "commits": [
+    {
+      "sha": "68424526d39076efe90b68d7787b2ee864f5be40",
+      "shortSha": "6842452",
+      "subject": "Publie le journal technique via un depot public",
+      "body": "",
+      "authorName": "N3uralCreativity",
+      "authoredAt": "2026-03-27T02:42:12+01:00",
+      "additions": 95,
+      "deletions": 42,
+      "filesChanged": 3,
+      "totalChanges": 137,
+      "dominantAreas": [
+        "Automation",
+        "Ops"
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/project-log-pages.yml",
+          "previousPath": null,
+          "status": "M",
+          "additions": 36,
+          "deletions": 25,
+          "changes": 61,
+          "area": "Automation",
+          "language": "YAML"
+        },
+        {
+          "path": "scripts/build-project-log.js",
+          "previousPath": null,
+          "status": "M",
+          "additions": 34,
+          "deletions": 6,
+          "changes": 40,
+          "area": "Ops",
+          "language": "JavaScript"
+        },
+        {
+          "path": "project-log/src/app.js",
+          "previousPath": null,
+          "status": "M",
+          "additions": 25,
+          "deletions": 11,
+          "changes": 36,
+          "area": "project-log",
+          "language": "JavaScript"
+        }
+      ],
+      "parents": [
+        "e5ff2ede3fd7e51ec701c744d4045790ff781302"
+      ],
+      "commitUrl": null,
+      "compareUrl": null
+    },
     {
       "sha": "e5ff2ede3fd7e51ec701c744d4045790ff781302",
       "shortSha": "e5ff2ed",
