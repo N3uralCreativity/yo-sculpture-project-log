@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YO Sculpture · Project Log</title>
+    <meta
+      name="description"
+      content="Repository timeline, commit activity, stack notes, and simple diff metrics for YO Sculpture."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="masthead">
+        <div class="masthead__identity">
+          <p class="eyebrow">Repository activity</p>
+          <h1>YO Sculpture project log</h1>
+          <p id="repoDescription" class="lede"></p>
+        </div>
+        <div class="masthead__actions">
+          <a id="repoLink" class="action-link" href="#" target="_blank" rel="noreferrer">Repository</a>
+          <a id="productionLink" class="action-link" href="#" target="_blank" rel="noreferrer">Production site</a>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="overview">
+          <div class="panel">
+            <div class="panel__header">
+              <h2>Snapshot</h2>
+              <p id="generatedAt" class="panel__meta"></p>
+            </div>
+            <div id="summaryGrid" class="summary-grid"></div>
+          </div>
+
+          <div class="panel">
+            <div class="panel__header">
+              <h2>Stack</h2>
+              <p class="panel__meta">Current project tooling and runtime profile.</p>
+            </div>
+            <div id="stackGrid" class="badge-grid"></div>
+          </div>
+
+          <div class="panel panel--split">
+            <div>
+              <div class="panel__header">
+                <h2>Tracked file map</h2>
+                <p class="panel__meta">Languages and file families in the current tree.</p>
+              </div>
+              <div id="languagesTable" class="table-list"></div>
+            </div>
+            <div>
+              <div class="panel__header">
+                <h2>Repository areas</h2>
+                <p class="panel__meta">Top-level folders with tracked files.</p>
+              </div>
+              <div id="areasTable" class="table-list"></div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel__header">
+              <h2>Monthly activity</h2>
+              <p class="panel__meta">Commit volume and simple diff totals over time.</p>
+            </div>
+            <div id="activityChart" class="activity-chart"></div>
+          </div>
+        </section>
+
+        <section class="workspace">
+          <aside class="filters panel">
+            <div class="panel__header">
+              <h2>Timeline filters</h2>
+              <p class="panel__meta">Search commit subjects, authors, or touched paths.</p>
+            </div>
+            <label class="field">
+              <span>Search</span>
+              <input id="searchInput" type="search" placeholder="auth, cookies, gallery, deploy..." />
+            </label>
+            <label class="field">
+              <span>Area</span>
+              <select id="areaSelect"></select>
+            </label>
+            <label class="field">
+              <span>Author</span>
+              <select id="authorSelect"></select>
+            </label>
+            <div class="filter-stats">
+              <div>
+                <span class="filter-stats__label">Visible commits</span>
+                <strong id="visibleCount">0</strong>
+              </div>
+              <div>
+                <span class="filter-stats__label">Visible changes</span>
+                <strong id="visibleChanges">0</strong>
+              </div>
+            </div>
+            <p id="repoNote" class="panel__note"></p>
+          </aside>
+
+          <section class="timeline panel">
+            <div class="panel__header">
+              <h2>Commit timeline</h2>
+              <p class="panel__meta">Interactive history with simple diff metrics only.</p>
+            </div>
+            <div id="commitList" class="commit-list"></div>
+          </section>
+
+          <section class="detail panel">
+            <div class="panel__header">
+              <h2>Commit details</h2>
+              <p class="panel__meta">Select a commit to inspect touched files and counts.</p>
+            </div>
+            <div id="commitDetail" class="detail__content">
+              <p class="empty-state">Select a commit from the timeline.</p>
+            </div>
+          </section>
+        </section>
+
+        <section class="panel">
+          <div class="panel__header">
+            <h2>Project scripts</h2>
+            <p class="panel__meta">Main npm commands currently wired into the repository.</p>
+          </div>
+          <div id="scriptsTable" class="table-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./data/project-log.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
